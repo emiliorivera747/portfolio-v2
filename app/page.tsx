@@ -11,9 +11,7 @@ export default function Home() {
   return (
     <main>
       <HomePage />
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        hello
-      </footer>
+      {/* <div className="h-screen w-screen bg-black text-white flex items-center justify-center">Hello</div> */}
     </main>
   );
 }
