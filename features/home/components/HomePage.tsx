@@ -8,7 +8,7 @@ import Overlay from "@/components/Overlay";
 import MainHeader from "@/features/home/components/MainHeader";
 
 const videoUrl =
-  "https://res.cloudinary.com/dcss55nem/video/upload/v1724197548/Casa_Website_Video_-_Made_with_Clipchamp_t2atbx.mp4";
+  "https://res.cloudinary.com/dcss55nem/video/upload/v1739681557/Portfolio_Video_t0y4tc.mp4";
 
 const HomePage = () => {
   const ref = useRef<HTMLDivElement>(null);
