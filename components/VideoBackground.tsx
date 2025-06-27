@@ -23,7 +23,8 @@ const VideoBackground = ({ url, children }: VideoBackgroundProps) => {
         playsInline
         autoPlay
       ></video>
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-20 flex flex-col justify-center items-start bg-transparent pl-16">
+
+      <header className="absolute top-0 left-0 right-0 bottom-0 z-20 flex flex-col justify-center items-start bg-transparent pl-16">
         <div className="flex lg:flex-row flex-row gap-2 2xl:flex-col md:gap-4 text-4xl  md:text-7xl 2xl:text-[14rem] mb-4 sm:mb-8">
           <h1 className="text-white font-bold">{"Emilio"}</h1>
           <h1 className="text-white font-bold">{"Rivera"}</h1>
@@ -37,7 +38,7 @@ const VideoBackground = ({ url, children }: VideoBackgroundProps) => {
           frameworks, tailored for small businesses and non-profit
           organizations.{" "}
         </p>
-      </div>
+      </header>
       {children}
     </section>
   );

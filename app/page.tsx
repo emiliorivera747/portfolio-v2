@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <main>
       <HomePage />
-      {/* <div className="h-screen w-screen bg-black text-white flex items-center justify-center">Hello</div> */}
     </main>
   );
 }
