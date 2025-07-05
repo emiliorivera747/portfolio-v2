@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { CldImage } from "next-cloudinary";
-
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -11,6 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import Logo from "@/components/navigation-bar/Logo";
 
 //Types
 import { MenuItem, SubMenuItem, NavbarProps } from "@/types/navigation-bar";
@@ -79,23 +78,7 @@ space-x-20 my-2 w-full"
       >
         {/* Logo */}
         <div className="z-30 justify-self-start ">
-          <Link
-            href="/"
-            className={`flex flex-row tracking-widest hover:text-white hover:backdrop-blur-md rounded-lg p-[0.8rem] ${logoTextColor} ${menuTextColor} font-semibold`}
-            aria-label="Logo"
-          >
-            <CldImage
-              src="https://res.cloudinary.com/dcss55nem/image/upload/v1702588027/favicon_5_a5rhl0.png"
-              fetchpriority="high"
-              height={30}
-              width={30}
-              className="pr-1 self-end"
-              alt="logo"
-            />{" "}
-            <h1 className="self-end font-bold tracking-widest">
-              {"milio's Portfolio"}
-            </h1>
-          </Link>
+          <Logo />
         </div>
 
         {/*Nav Items*/}
