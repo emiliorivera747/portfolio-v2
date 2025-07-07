@@ -14,6 +14,10 @@ import Logo from "@/components/navigation-bar/Logo";
 //Types
 import { MenuItem, SubMenuItem, NavbarProps } from "@/types/navigation-bar";
 
+
+/***
+ * * Navbar component that renders a responsive navigation bar with menu items.
+ */
 export default function Navbar({ menuItems }: NavbarProps) {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
